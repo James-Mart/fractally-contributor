@@ -1,0 +1,21 @@
+{
+    "build": { "args": { 
+        "GITHUB_ACCOUNT": "gofractally",
+        "REPOSITORY_NAME": "fractally"
+    }},
+
+    "name": "${localWorkspaceFolderBasename}",
+    "workspaceMount": "type=volume,src=${localWorkspaceFolderBasename},dst=/root/fractally",
+    "dockerFile": "./Dockerfile",
+    "workspaceFolder": "/root/fractally/projects/fractally",
+
+    "extensions": [
+        "lihui.vs-color-picker",
+        "esbenp.prettier-vscode",
+        "rioj7.command-variable",
+        "eamodio.gitlens",
+        "ziyasal.vscode-open-in-github",
+        "actboy168.tasks",
+        "graphql.vscode-graphql"
+    ]
+}
