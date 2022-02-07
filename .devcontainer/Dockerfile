@@ -20,6 +20,9 @@ export PS1="\u@\h \W\[\\033[32m\\]\\$(parse_git_branch)\\[\\033[00m\\] $ "\n\
 if [ -f ~/.git-completion.bash ]; then\n\
   . ~/.git-completion.bash\n\
 fi\n\
+ \n\
+alias ll="ls -alF"\n\
+alias ls="ls --color=auto"\n\
 ' >> /root/.bashrc
 
 WORKDIR /root
